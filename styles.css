@@ -8,16 +8,6 @@ body {
   min-height: 100vh;
 }
 
-.container {
-  position: relative;
-  text-align: center;
-  max-width: 1200px;
-}
-
-.hero {
-  position: relative;
-}
-
 .background-image {
   width: 100%;
   background-position: center;
