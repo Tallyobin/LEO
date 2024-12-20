@@ -31,14 +31,14 @@ body {
 
 .content {
   position: absolute;
-  top: 80%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: left;
   padding: 20px;
   background-color: #261A03;
   border-radius: 10px;
-  max-width: 750px;
+  max-width: 600px;
 }
 
 h1 {
