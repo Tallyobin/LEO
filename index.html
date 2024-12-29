@@ -25,42 +25,43 @@
         </div>
       </div>
     </div>
+
     <section class="faq-section">
       <h1 class="title">FREQUENTLY ASKED QUESTIONS</h1>
       <ul class="faq">
         <li>
           <div class="q">
             <span class="arrow"></span>
-            <span>How does LEO work?</span>
+            <span>What is LEO?</span>
           </div>
           <div class="a">
-            <iframe 
-              width="560" 
-              height="315" 
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-              title="YouTube video player" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </li>
-        <!-- Add more FAQ items as needed -->
+        <li>
+          <div class="q">
+            <span class="arrow"></span>
+            <span>How does LEO detect threats?</span>
+          </div>
+          <div class="a">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </li>
+        <li>
+          <div class="q">
+            <span class="arrow"></span>
+            <span>Can I customize the alerts?</span>
+          </div>
+          <div class="a">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </li>
       </ul>
     </section>
   </div>
-  <script>
-    // FAQ dropdown functionality
-    const q = document.querySelectorAll('.q');
-    const a = document.querySelectorAll('.a');
-    const arr = document.querySelectorAll('.arrow');
-
-    for (let i = 0; i < q.length; i++) {
-      q[i].addEventListener('click', () => {
-        a[i].classList.toggle('a-opened');
-        arr[i].classList.toggle('arrow-rotated');
-      });
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
