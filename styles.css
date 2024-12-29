@@ -7,13 +7,19 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
+  overflow: hidden;
 }
 
 .background-image {
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  transition: filter 2s ease-in, opacity 2s ease-in;
+}
+
+.background-blurred {
+  filter: blur(8px) brightness(0.4);
 }
 
 .content {
@@ -26,6 +32,12 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   max-width: 600px;
+  opacity: 0;
+  transition: opacity 2s ease-in;
+}
+
+.content-visible {
+  opacity: 1;
 }
 
 h1 {
@@ -66,17 +78,10 @@ p {
   padding: 4em 2em;
 }
 
-.title {
-  text-align: center;
-  font-size: 3em;
-  margin: 1em;
-}
-
 .faq {
   list-style: none;
   max-width: 700px;
-  margin: 0 auto;
-  padding: 0;
+  margin: 2em auto 0;
 }
 
 .faq li {
@@ -84,16 +89,10 @@ p {
   border-bottom: 1px #ccc solid;
 }
 
-.faq li:first-child {
-  border-top: 1px #ccc solid;
-}
-
 .q {
   padding: 1em 0;
   border-left: 10px #f2f2f2 solid;
   cursor: pointer;
-  display: flex;
-  align-items: center;
 }
 
 .q:hover,
@@ -112,18 +111,17 @@ p {
   transition: transform 0.3s;
 }
 
-.arrow-rotated {
-  transform: rotate(90deg);
-}
-
 .a {
   overflow: hidden;
   height: 0;
   padding: 0 1em 0 3.3em;
-  transition: height 0.3s ease;
 }
 
 .a-opened {
   height: auto;
   padding: 1em 1em 2em 3.3em;
+}
+
+.arrow-rotated {
+  transform: rotate(90deg);
 }
